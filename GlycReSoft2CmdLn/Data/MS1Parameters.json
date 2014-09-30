@@ -1,0 +1,10 @@
+﻿{
+	"dataNoiseTheshold" : 1.0,
+	"minScoreThreshold" : 0,
+	"matchErrorEM" : 10.0,
+	"molecularWeightLowerBound" : 500,
+	"molecularWeightUpperBound" : 15000,
+	"groupingErrorEG" : 80,
+	"adductToleranceEA" : 5.0,
+	"minScanNumber" : 1
+}

@@ -1,0 +1,67 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" ActiveRuntime="MS.NET" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GlycReSoft2CmdLn\Parsing\MS1ParameterParser.cs">
+    <Files>
+      <File FileName="GlycReSoft2CmdLn\CommandDrivers\GlycopeptideCompositionHypothesisDriver.cs" Line="1" Column="1" />
+      <File FileName="GlycReSoft2CmdLn\Parsing\CompositionHypothesis.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\jaklein\Desktop\Projects\GlycReSoft2CmdLn\GlycReSoft2CmdLn\Program.cs" Line="1" Column="1" />
+      <File FileName="GlycReSoft2CmdLn\Parsing\MS1ParameterParser.cs" Line="17" Column="56" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\jaklein\Desktop\Projects\GlycReSoft2CmdLn\GlycReSoft2CmdLn\RunMS1SupervisedLearningAlgorithm.cs" line="23" column="1" />
+      <Breakpoint file="C:\Users\jaklein\Desktop\Projects\GlycReSoft2CmdLn\GlycReSoft2CmdLn\Parsing\CompositionHypothesis.cs" line="681" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.GlycReSoft2CmdLn>
+    <MonoDevelop.Ide.CustomExecutionModes>
+      <Data Name="Show Help" Id="4f0d021b-c048-4f51-b8ca-35d575832160" ModeId="Mono 3.3.0 (6cd4ddc)&#xD;&#xA;Copyright)">
+        <CommandData>
+          <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
+            <Value Arguments="-h" ctype="CustomArgsExecutionModeData">
+              <EnvironmentVariables />
+            </Value>
+          </Item>
+        </CommandData>
+      </Data>
+      <Data Name="RunSupervisedLearning" Id="45ba34bb-56f1-4ab2-8099-36762d15612d" ModeId="Mono 3.3.0 (6cd4ddc)&#xD;&#xA;Copyright)">
+        <CommandData>
+          <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
+            <Value Arguments="SupervisedLearning -v --debug --deconToolsFile  &quot;C:\Users\jaklein\Dropbox\Glycomics Sandbox\Test Data\Data_input_for_MS1_matching_20131219_005_isos.csv&quot;  --glycanCompositionHypothesisFile &quot;C:\Users\jaklein\Dropbox\Glycomics Sandbox\Test Data\HA-USSR-Glycopeptide hypothesis.csv&quot;" ctype="CustomArgsExecutionModeData">
+              <EnvironmentVariables />
+            </Value>
+          </Item>
+        </CommandData>
+      </Data>
+      <Data Name="Verbose Param + Output Directory Set" Id="893fb7d3-6771-4734-8d6c-ff4e16f6946a" ModeId="Mono 3.3.0 (6cd4ddc)&#xD;&#xA;Copyright)" PromptForParameters="True">
+        <CommandData>
+          <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
+            <Value Arguments="-v --deconToolsFile  &quot;C:\Users\jaklein\Dropbox\Glycomics Sandbox\Test Data\Data_input_for_MS1_matching_20131219_005_isos.csv&quot;  --glycanCompositionHypothesisFile &quot;C:\Users\jaklein\Dropbox\Glycomics Sandbox\Test Data\HA-USSR-Glycopeptide hypothesis.csv&quot; -o  &quot;C:\Users\jaklein\Dropbox\Glycomics Sandbox\Development Examples\Output_1&quot;" ctype="CustomArgsExecutionModeData">
+              <EnvironmentVariables />
+            </Value>
+          </Item>
+        </CommandData>
+      </Data>
+      <Data Name="GlycanHypo" Id="33a4231c-5853-456f-a69f-f44497ad9541" ModeId="Mono 3.3.0 (6cd4ddc)&#xD;&#xA;Copyright)">
+        <CommandData>
+          <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
+            <Value Arguments="GenGlycanHypothesis -v --debug -c=&quot;C:\Users\jaklein\Dropbox\Glycomics Sandbox\Development Examples\test-glycan-composition.cpos&quot; --addWater" ctype="CustomArgsExecutionModeData">
+              <EnvironmentVariables />
+            </Value>
+          </Item>
+        </CommandData>
+      </Data>
+      <Data Name="GlycoPeptideHypothesis" Id="f7fa9302-b5d6-4bb9-bc69-b7dde33a3a97" ModeId="Mono 3.3.0 (6cd4ddc)&#xD;&#xA;Copyright)">
+        <CommandData>
+          <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
+            <Value Arguments="GenGlycoPeptideHypothesis -v --debug -g=&quot;C:\Users\jaklein\Dropbox\Glycomics Sandbox\Development Examples\Glycresoft glycan hypothesis.csv&quot; -p=&quot;C:\Users\jaklein\Dropbox\Glycomics Sandbox\Development Examples\KK-USSR-digest-Prospector output.txt&quot; -s=&quot;C:\Users\jaklein\Dropbox\Glycomics Sandbox\Development Examples\USSR-glycosylation site list.txt&quot;" ctype="CustomArgsExecutionModeData">
+              <EnvironmentVariables />
+            </Value>
+          </Item>
+        </CommandData>
+      </Data>
+    </MonoDevelop.Ide.CustomExecutionModes>
+  </MonoDevelop.Ide.ItemProperties.GlycReSoft2CmdLn>
+</Properties>

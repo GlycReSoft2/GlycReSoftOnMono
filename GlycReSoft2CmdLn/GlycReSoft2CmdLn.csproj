@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{AD0F32EA-DE22-4F29-AD65-57A06579E8E4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GlycReSoft</RootNamespace>
+    <AssemblyName>GlycReSoft2CmdLn</AssemblyName>
+    <StartupObject>GlycReSoft.MainClass</StartupObject>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+    <Commandlineparameters>GenGlycoPeptideHypothesis -v --debug -g="C:\Users\jaklein\Dropbox\Glycomics Sandbox\Development Examples\Glycresoft glycan hypothesis.csv" -p="C:\Users\jaklein\Dropbox\Glycomics Sandbox\Development Examples\KK-USSR-digest-Prospector output.txt" -s="C:\Users\jaklein\Dropbox\Glycomics Sandbox\Development Examples\USSR-glycosylation site list.txt"</Commandlineparameters>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Accord">
+      <HintPath>..\packages\Accord.2.12.0.0\lib\Accord.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math">
+      <HintPath>..\packages\AForge.Math.2.2.5\lib\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math">
+      <HintPath>..\packages\Accord.Math.2.12.0.0\lib\Accord.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics">
+      <HintPath>..\packages\Accord.Statistics.2.12.0.0\lib\Accord.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="NDesk.Options">
+      <HintPath>..\packages\NDesk.Options.0.2.1\lib\NDesk.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="ManyConsole">
+      <HintPath>..\packages\ManyConsole.0.4.2.17\lib\ManyConsole.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CSharp">
+      <HintPath>..\packages\Mono.CSharp.3.4.0\lib\net40\Mono.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Data\AminoAcidMass.cs" />
+    <Compile Include="Data\PeriodicTable.cs" />
+    <Compile Include="Parsing\DeconToolsParser.cs" />
+    <Compile Include="Parsing\MS1ParameterParser.cs" />
+    <Compile Include="Parsing\YAMP_MathParserTK.cs" />
+    <Compile Include="Algorithms\GroupingResults.cs" />
+    <Compile Include="Algorithms\SupervisedLearning.cs" />
+    <Compile Include="Parsing\Feature.cs" />
+    <Compile Include="Parsing\CompositionHypothesis.cs" />
+    <Compile Include="CommandDrivers\MS1SupervisedLearningDriver.cs" />
+    <Compile Include="CommandDrivers\GlycanCompositionHypothesisDriver.cs" />
+    <Compile Include="CommandDrivers\GlycopeptideCompositionHypothesisDriver.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Data\MS1Parameters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\DefaultFeatures.fea">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Migrating\TagResults.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Parsing\" />
+    <Folder Include="Algorithms\" />
+    <Folder Include="Migrating\" />
+    <Folder Include="CommandDrivers\" />
+    <Folder Include="TestData\" />
+  </ItemGroup>
+</Project>
